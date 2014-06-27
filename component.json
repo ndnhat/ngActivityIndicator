@@ -1,0 +1,15 @@
+{
+  "name": "ngActivityIndicator",
+  "repo": "ndnhat/ngActivityIndicator",
+  "description": "Componentized ngActivityIndicator - A preloader provider for Angular",
+  "version": "0.1.3",
+  "keywords": ["angular, preloader, activity indicator, component"],
+  "dependencies": {},
+  "scripts": [
+    "ngActivityIndicator-component.js"
+  ],
+  "styles": [
+    "css/ngActivityIndicator.css"
+  ],
+  "license": "MIT"
+}

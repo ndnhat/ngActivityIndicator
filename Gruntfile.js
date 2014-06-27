@@ -23,6 +23,14 @@ module.exports = function (grunt) {
 			files: ['*.js']
 		},
 
+		concat: {
+			component: {
+				files: {
+					'ngActivityIndicator-component.js': ['ngActivityIndicator.js', 'component-export.js']
+				}
+			}
+		},
+
 		cssmin: {
 			options: {
 				banner: '/*! <%= pkg.name %> - v<%= pkg.version %> (<%= pkg.homepage %>) */\n'
@@ -37,6 +45,7 @@ module.exports = function (grunt) {
 
 	grunt.loadNpmTasks('grunt-contrib-jshint');
 	grunt.loadNpmTasks('grunt-contrib-uglify');
+	grunt.loadNpmTasks('grunt-contrib-concat');
 	grunt.loadNpmTasks('grunt-contrib-cssmin');
-	grunt.registerTask('default', ['jshint', 'uglify', 'cssmin']);
+	grunt.registerTask('default', ['jshint', 'uglify', 'concat', 'cssmin']);
 };
